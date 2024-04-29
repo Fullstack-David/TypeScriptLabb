@@ -1,6 +1,5 @@
 import "./index.css";
 import Board from "./Board";
-import Cell from "./Cell";
 function App() {
   return (
     <div className="container">

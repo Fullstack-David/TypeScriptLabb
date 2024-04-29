@@ -1,4 +1,4 @@
-type Player = "X" | "O" | null;
+export type Player = "X" | "O" | "BOTH" | null;
 
 export default function Cell({
   value,
@@ -10,7 +10,13 @@ export default function Cell({
   onClick: () => void;
 }) {
   if (!value) {
-    return <button onClick={onClick} disabled={Boolean(winner)} />;
+    return (
+      <button className="cell" onClick={onClick} disabled={Boolean(winner)} />
+    );
   }
-  return <button className={`cell cell_${value}`}>{value}</button>;
+  return (
+    <button className={`cell cell_${value}`} disabled>
+      {value}
+    </button>
+  );
 }
