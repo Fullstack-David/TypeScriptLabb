@@ -57,9 +57,10 @@ export default function Board() {
       setWinner("BOTH");
     }
   }, []);
+
   return (
     <div>
-      <p>Hey {currentPlayer} its your turn!</p>
+      {!winner && <p>Hey {currentPlayer} its your turn!</p>}
       {winner && winner !== "BOTH" && <p>Congrats {winner}</p>}
       {winner && winner === "BOTH" && <p>Congrats you are both winners</p>}
       <div className="grid">

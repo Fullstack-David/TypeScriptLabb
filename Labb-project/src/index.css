@@ -23,7 +23,7 @@ body {
   border: solid 1px black;
 }
 .cell_O {
-  background-color: green;
+  background-color: #198754;
   width: 100px;
   height: 100px;
   font-size: 5rem;
@@ -31,7 +31,7 @@ body {
   border: solid 1px black;
 }
 .cell_X {
-  background-color: rgb(238, 14, 47);
+  background-color: #dc3545;
   width: 100px;
   height: 100px;
   font-size: 5rem;
