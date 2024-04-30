@@ -81,7 +81,11 @@ export default function Board() {
           Hey <span>{currentPlayer} </span>its your turn!
         </p>
       )}
-      {winner && winner !== "BOTH" && <p>Congrats {winner}</p>}
+      {winner && winner !== "BOTH" && (
+        <p>
+          Congrats <span className="winner">{winner} 👑</span>
+        </p>
+      )}
       {winner && winner === "BOTH" && <p>Congrats you are both winners</p>}
       <div className="grid">
         {Array(9)

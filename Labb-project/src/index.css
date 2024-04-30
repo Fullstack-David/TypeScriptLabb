@@ -64,3 +64,6 @@ p {
 span {
   color: red;
 }
+.winner {
+  color: green;
+}
